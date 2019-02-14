@@ -13,7 +13,7 @@ del,dfn,em,img,ins,kbd,q,s,samp,
 small,strike,strong,sub,sup,tt,var,
 b,u,i,center,
 dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend,
+fieldset,form,label,lege
 table,caption,tbody,tfoot,thead,tr,th,td,
 article,aside,canvas,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section,summary,
@@ -58,3 +58,40 @@ table{
 }
 
 /* Your Code Goes Here */
+//variables
+@white: #FFFFFF; //general background, jumbotron header color, footer headings color, footer text color, nav logo logo, expanded nav text color
+@black: #222222; //general color, sub headers, home button borders, services tab hover background, expanded nav text hover color
+
+@home-rcnt-proj-sqr: #D8D8D8;
+@svcs-tab-selct-bkgrnd: #5E9FB9;
+@svcs-tab-hvr-colr: #FFF;
+@ftr-bkgrnd: #828282;
+
+
+
+.container {
+  border: 1px solid orange;
+  margin: 0 auto;
+  width: 1023px;
+}
+
+.menu-img {
+  background-image: url("../img/home/home-jumbotron.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+
+  .menu-items {
+    background-color: #99A4AF;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+
+    h1 {
+      color: @white;
+    }
+  
+  }
+}
