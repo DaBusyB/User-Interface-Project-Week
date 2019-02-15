@@ -133,6 +133,9 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+body {
+  font-family: "Roboto", sans-serif;
+}
 .container {
   border: 1px solid orange;
   margin: 0 auto;
@@ -143,14 +146,23 @@ table {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 598px;
+  color: #FFFFFF;
 }
 .menu-img .menu-items {
   background-color: #99A4AF;
-  height: 50px;
+  height: 49px;
   display: flex;
   flex-direction: row;
 }
-.menu-img .menu-items h1 {
-  color: #FFFFFF;
+.smith-jones-container,
+.futuristic-designs-container {
+  display: flex;
+}
+.villas,
+.outskirts,
+.blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
