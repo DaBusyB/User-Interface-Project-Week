@@ -166,3 +166,20 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.villas img,
+.outskirts img,
+.blocks img {
+  width: 925px;
+}
+.villas p,
+.outskirts p,
+.blocks p {
+  width: 500px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+.footer-section .footer {
+  display: flex;
+}
