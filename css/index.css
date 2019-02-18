@@ -217,6 +217,10 @@ button {
   font-size: 24px;
   margin-bottom: 20px;
 }
+.business-content .futuristic-designs-content p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
 .business-content .futuristic-designs-content .project-text {
   line-height: 1.6;
   margin-bottom: 25px;
@@ -253,19 +257,19 @@ button {
   background-size: cover;
   height: 230px;
   width: 854px;
-  position: relative;
+  margin-bottom: 50px;
+  display: flex;
 }
 .recent-projects .villas .villas-box p {
   border: 1px solid #FFFFFF;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  top: 75%;
+  left: 63%;
   font-size: 25px;
   width: 315px;
   text-align: center;
-  height: 90px;
   background-color: #D8D8D8;
-  letter-spacing: 1;
+  height: 94px;
 }
 .recent-projects .outskirts .outskirts-box {
   background-image: url("../img/home/home-outskirts-img.png");
@@ -273,6 +277,8 @@ button {
   background-size: cover;
   height: 230px;
   width: 854px;
+  margin-bottom: 50px;
+  display: flex;
 }
 .recent-projects .blocks .blocks-box {
   background-image: url("../img/home/home-the-blocks-img.png");

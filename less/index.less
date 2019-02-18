@@ -170,6 +170,11 @@ button {
       margin-bottom: 20px;
     }
 
+    p {
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
     .project-text {
       line-height: 1.6;
       margin-bottom: 25px;
@@ -205,37 +210,40 @@ button {
     }
   }
   
-  .villas .villas-box{
-    background-image: url("../img/home/home-villas-img.png");
-    //background-position: center;
+  //variables and mixins
+  @boxes: {
     background-repeat: no-repeat;
     background-size: cover;
     height: 230px;
     width: 854px;
+    margin-bottom: 50px;
+    display: flex;
+  }
+
+  @project-title-box: {
+    border: 1px solid @white;
     position: relative;
+    top: 75%;
+    left: 63%;
+    font-size: 25px;
+    width: 315px;
+    text-align: center;
+    background-color: #D8D8D8;
+    height: 94px;
+  }
+
+  .villas .villas-box{
+    background-image: url("../img/home/home-villas-img.png");
+    @boxes();
 
     p {
-      border: 1px solid @white;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      font-size: 25px;
-      width: 315px;
-      text-align: center;
-      height: 90px; 
-      background-color: #D8D8D8;
-      letter-spacing: 1;
-      //padding-top: 50px;
+      @project-title-box();
     }
   }
 
   .outskirts .outskirts-box {
     background-image: url("../img/home/home-outskirts-img.png");
-    //background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 230px;
-    width: 854px;
+    @boxes();
 
     p {
 
