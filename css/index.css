@@ -221,21 +221,32 @@ button {
   line-height: 1.6;
   margin-bottom: 25px;
 }
-.villas,
-.outskirts,
-.blocks {
+.recent-projects {
+  margin: 0 auto;
+  margin-top: 95px;
+  border: 1px solid blue;
+  width: 854px;
+}
+.recent-projects h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+.recent-projects .villas,
+.recent-projects .outskirts,
+.recent-projects .blocks {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
-.villas img,
-.outskirts img,
-.blocks img {
-  width: 925px;
+.recent-projects .villas img,
+.recent-projects .outskirts img,
+.recent-projects .blocks img {
+  width: 854px;
 }
-.villas p,
-.outskirts p,
-.blocks p {
+.recent-projects .villas p,
+.recent-projects .outskirts p,
+.recent-projects .blocks p {
   width: 500px;
 }
 .footer-section {
