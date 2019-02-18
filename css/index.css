@@ -141,6 +141,12 @@ body {
   margin: 0 auto;
   width: 1023px;
 }
+button {
+  border: 1px solid #222222;
+  padding: 14px 25px;
+  font-size: 16px;
+  width: 136px;
+}
 .menu-img {
   background-image: url("../img/home/home-jumbotron.png");
   background-position: center;
@@ -171,9 +177,50 @@ body {
   font-weight: bold;
   line-height: 1.2;
 }
-.smith-jones-container,
-.futuristic-designs-container {
+.business-content {
   display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  width: 854px;
+  margin: 0 auto;
+}
+.business-content .smith-jones-container,
+.business-content .futuristic-designs-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.business-content .smith-jones-content,
+.business-content .futuristic-designs-content {
+  border: 1px solid blue;
+  width: 411px;
+}
+.business-content .smith-jones-content {
+  margin-top: 48px;
+}
+.business-content .smith-jones-content h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.business-content .smith-jones-content p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.business-content .smith-jones-content .sjones-button {
+  margin-bottom: 135px;
+}
+.business-content .futuristic-designs-content img {
+  margin-bottom: 137px;
+}
+.business-content .futuristic-designs-content h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.business-content .futuristic-designs-content p {
+  line-height: 1.6;
+  margin-bottom: 26px;
 }
 .villas,
 .outskirts,
