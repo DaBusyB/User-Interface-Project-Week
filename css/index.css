@@ -274,6 +274,7 @@ body {
 .services-container {
   margin: 0 auto;
   width: 1023px;
+  border: 1px solid orange;
 }
 .services-menu-img {
   background-image: url("../img/services/services-jumbotron.png");
@@ -304,6 +305,20 @@ body {
   font-size: 63px;
   font-weight: bold;
   line-height: 1.2;
+}
+.services-inner-container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-inner-container .services-middle-content {
+  width: 850px;
+  border: 1px solid green;
+}
+.services-inner-container .services-middle-content .services-text {
+  margin-top: 50px;
+  line-height: 1.6;
 }
 /* Your Code Goes Here */
 body {

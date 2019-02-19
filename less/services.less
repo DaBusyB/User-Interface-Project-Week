@@ -67,6 +67,7 @@ body {
 .services-container {
   margin: 0 auto;
   width: 1023px;
+  border: 1px solid orange;
 }
 
 //code starts here
@@ -103,4 +104,22 @@ body {
     font-weight: bold;
     line-height: 1.2;
   }
+}
+
+.services-inner-container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .services-middle-content {
+    width: 850px;
+    border: 1px solid green;
+
+    .services-text {
+      margin-top: 50px;
+      line-height: 1.6;
+    }
+  }
+
 }
