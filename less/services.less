@@ -114,11 +114,36 @@ body {
 
   .services-middle-content {
     width: 850px;
-    border: 1px solid green;
+    //border: 1px solid green;
 
     .services-text {
       margin-top: 50px;
       line-height: 1.6;
+    }
+
+    .services-tabs {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 45px;
+
+      button {
+        width: 184px;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: @white;
+        transition-duration: 0.4s;
+
+        &:hover {
+          background-color: #222222;
+          color: #FFF;
+        }
+
+        &:focus {
+          background-color: #5E9FB9;
+        }
+      }
+
+    
     }
   }
 

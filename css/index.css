@@ -314,11 +314,29 @@ body {
 }
 .services-inner-container .services-middle-content {
   width: 850px;
-  border: 1px solid green;
 }
 .services-inner-container .services-middle-content .services-text {
   margin-top: 50px;
   line-height: 1.6;
+}
+.services-inner-container .services-middle-content .services-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+.services-inner-container .services-middle-content .services-tabs button {
+  width: 184px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  transition-duration: 0.4s;
+}
+.services-inner-container .services-middle-content .services-tabs button:hover {
+  background-color: #222222;
+  color: #FFF;
+}
+.services-inner-container .services-middle-content .services-tabs button:focus {
+  background-color: #5E9FB9;
 }
 /* Your Code Goes Here */
 body {
