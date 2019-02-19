@@ -257,17 +257,23 @@ button {
   width: 854px;
   margin-bottom: 93px;
   display: flex;
+  letter-spacing: 8px;
 }
-.recent-projects .villas .villas-box p {
+.recent-projects .villas .villas-box .title-box {
   border: 1px solid #FFFFFF;
   position: relative;
-  top: 75%;
+  top: 77%;
   font-size: 25px;
   width: 315px;
   text-align: center;
   background-color: #D8D8D8;
   height: 94px;
+  display: flex;
+  align-items: center;
   left: 63%;
+}
+.recent-projects .villas .villas-box .title-box p {
+  margin: 0 auto;
 }
 .recent-projects .outskirts .outskirts-box {
   background-image: url("../img/home/home-outskirts-img.png");
@@ -277,17 +283,23 @@ button {
   width: 854px;
   margin-bottom: 93px;
   display: flex;
+  letter-spacing: 8px;
   margin-top: 80px;
 }
-.recent-projects .outskirts .outskirts-box p {
+.recent-projects .outskirts .outskirts-box .title-box {
   border: 1px solid #FFFFFF;
   position: relative;
-  top: 75%;
+  top: 77%;
   font-size: 25px;
   width: 315px;
   text-align: center;
   background-color: #D8D8D8;
   height: 94px;
+  display: flex;
+  align-items: center;
+}
+.recent-projects .outskirts .outskirts-box .title-box p {
+  margin: 0 auto;
 }
 .recent-projects .blocks .blocks-box {
   background-image: url("../img/home/home-the-blocks-img.png");
@@ -297,23 +309,69 @@ button {
   width: 854px;
   margin-bottom: 93px;
   display: flex;
+  letter-spacing: 8px;
   margin-top: 80px;
 }
-.recent-projects .blocks .blocks-box p {
+.recent-projects .blocks .blocks-box .title-box {
   border: 1px solid #FFFFFF;
   position: relative;
-  top: 75%;
+  top: 77%;
   font-size: 25px;
   width: 315px;
   text-align: center;
   background-color: #D8D8D8;
   height: 94px;
+  display: flex;
+  align-items: center;
   left: 63%;
 }
+.recent-projects .blocks .blocks-box .title-box p {
+  margin: 0 auto;
+}
 .footer-section {
+  background-color: #828282;
+  height: 248px;
+  margin-top: 74px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .footer-section .footer {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 230px;
+  margin: 0px 60px;
+}
+.footer-section .footer .contact-invite {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.footer-section .footer input {
+  width: 275px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.footer-section .footer .privacy-statement {
+  font-size: 13px;
+}
+.footer-section .footer address {
+  line-height: 1.6;
+}
+.footer-section .footer address h3 {
+  font-size: 18px;
+}
+.footer-section .footer address div {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.footer-section .copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
 }
