@@ -317,20 +317,21 @@ body {
   border: 1px solid green;
 }
 .services-inner-container .services-middle-content .services-text {
-  margin-top: 50px;
+  margin-top: 49px;
   line-height: 1.6;
 }
 .services-inner-container .services-middle-content .services-tabs {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
+  margin-top: 43px;
 }
 .services-inner-container .services-middle-content .services-tabs button {
   width: 184px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
   background-color: #FFFFFF;
   transition-duration: 0.4s;
+  height: 50px;
 }
 .services-inner-container .services-middle-content .services-tabs button:hover {
   background-color: #222222;
@@ -342,25 +343,74 @@ body {
 .services-inner-container .services-middle-content .services-tabs-components {
   display: flex;
   flex-direction: row;
-  margin-top: 55px;
+  margin-top: 53px;
 }
 .services-inner-container .services-middle-content .services-tabs-components .components-wrapper h2 {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 .services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas {
   width: 416px;
 }
 .services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas .top-text {
   margin-top: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
   font-size: 16px;
 }
 .services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas .bottom-text {
-  margin-top: 16px;
-  line-height: 1.6;
+  margin-top: 10px;
+  line-height: 1.65;
   font-size: 16px;
+}
+.services-inner-container .services-middle-content .services-tabs-components .component-image {
+  margin: 34px 0px 0px 36px;
+}
+.services-footer-section {
+  background-color: #828282;
+  height: 248px;
+  margin-top: 88px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.services-footer-section .services-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 230px;
+  margin: 0px 60px;
+}
+.services-footer-section .services-footer .services-contact-invite {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.services-footer-section .services-footer input {
+  width: 275px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.services-footer-section .services-footer .services-privacy-statement {
+  font-size: 13px;
+}
+.services-footer-section .services-footer address {
+  line-height: 1.6;
+}
+.services-footer-section .services-footer address h3 {
+  font-size: 18px;
+}
+.services-footer-section .services-footer address div {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.services-footer-section .copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
 }
 /* Your Code Goes Here */
 body {
