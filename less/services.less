@@ -114,7 +114,7 @@ body {
 
   .services-middle-content {
     width: 850px;
-    //border: 1px solid green;
+    border: 1px solid green;
 
     .services-text {
       margin-top: 50px;
@@ -142,9 +142,39 @@ body {
           background-color: #5E9FB9;
         }
       }
+    }//services-tabs
 
-    
-    }
-  }
+    .services-tabs-components {
+      display: flex;
+      flex-direction: row;
+      margin-top: 55px;
 
-}
+      .components-wrapper {
+
+        h2 {
+          font-size: 20px;
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+
+        .component-text-areas {
+          width: 416px;
+
+          .top-text {
+            margin-top: 16px;
+            line-height: 1.6;
+            font-size: 16px;
+          }
+
+          .bottom-text {
+            margin-top: 16px;
+            line-height: 1.6;
+            font-size: 16px;
+          }
+        }
+      }
+    }//services-tabs-components
+
+  }//services-middle-content
+
+}//services-inner-container

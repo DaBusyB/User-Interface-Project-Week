@@ -314,6 +314,7 @@ body {
 }
 .services-inner-container .services-middle-content {
   width: 850px;
+  border: 1px solid green;
 }
 .services-inner-container .services-middle-content .services-text {
   margin-top: 50px;
@@ -337,6 +338,29 @@ body {
 }
 .services-inner-container .services-middle-content .services-tabs button:focus {
   background-color: #5E9FB9;
+}
+.services-inner-container .services-middle-content .services-tabs-components {
+  display: flex;
+  flex-direction: row;
+  margin-top: 55px;
+}
+.services-inner-container .services-middle-content .services-tabs-components .components-wrapper h2 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas {
+  width: 416px;
+}
+.services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas .top-text {
+  margin-top: 16px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas .bottom-text {
+  margin-top: 16px;
+  line-height: 1.6;
+  font-size: 16px;
 }
 /* Your Code Goes Here */
 body {
