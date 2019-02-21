@@ -8,11 +8,23 @@
     z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
 
-.menu ul li{
+.menu ul li {
     list-style-type: none;
-    font-size: 32px;
+    font-size: 48px;
     padding: 30px 0;
     text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 85px;
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+        
+        &:hover {
+           color:  #222222;
+        }
+    }
 }
   
 .menu--open {
