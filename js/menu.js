@@ -1,19 +1,16 @@
 const menu = document.querySelector(".menu");
 const menuButton = document.querySelector(".menu-button");
-const buttonImg = menuButton.querySelector('img');
+const buttonImg = document.querySelector('img[alt="menu-button"]');
+
 
 const toggleMenu = () => {
-    //Toggle the "menu--open" class on your menu refence. 
     menu.classList.toggle("menu--open")
-    console.log(menu.classList.value)
-    console.log(buttonImg.src)
-
-    menu.classList.forEach(
-        function(eaClass, key, listObj) {
-        menu.classList.value === 'menu' ?
-       buttonImg.src = 'img/services/nav-hamburger.png'  :
-       buttonImg.src = 'img/services/nav-hamburger-close.png';
-    })
+    
+    
+    menu.classList.value === "menu menu--open" ? 
+    buttonImg.src = 'img/services/nav-hamburger-close.png' :
+    buttonImg.src = 'img/nav-hamburger.png'
 }
+
 
 menuButton.addEventListener("click", toggleMenu);
