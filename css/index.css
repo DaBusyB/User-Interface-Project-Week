@@ -274,7 +274,6 @@ body {
 .services-container {
   margin: 0 auto;
   width: 1023px;
-  border: 1px solid orange;
 }
 .services-menu-img {
   background-image: url("../img/services/services-jumbotron.png");
@@ -307,14 +306,12 @@ body {
   line-height: 1.2;
 }
 .services-inner-container {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .services-inner-container .services-middle-content {
   width: 850px;
-  border: 1px solid green;
 }
 .services-inner-container .services-middle-content .services-text {
   margin-top: 49px;
@@ -340,31 +337,37 @@ body {
 .services-inner-container .services-middle-content .services-tabs button:focus {
   background-color: #5E9FB9;
 }
-.services-inner-container .services-middle-content .services-tabs-components {
+.services-inner-container .services-middle-content .tab-show {
+  display: none;
+}
+.services-inner-container .services-middle-content .tab-show .tab {
   display: flex;
   flex-direction: row;
   margin-top: 53px;
 }
-.services-inner-container .services-middle-content .services-tabs-components .components-wrapper h2 {
+.services-inner-container .services-middle-content .tab-show .tab .tab-text h2 {
   font-size: 21px;
   font-weight: bold;
   letter-spacing: 1.5px;
 }
-.services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas {
+.services-inner-container .services-middle-content .tab-show .tab .tab-text .component-text-areas {
   width: 416px;
 }
-.services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas .top-text {
+.services-inner-container .services-middle-content .tab-show .tab .tab-text .component-text-areas .top-text {
   margin-top: 16px;
   line-height: 1.65;
   font-size: 16px;
 }
-.services-inner-container .services-middle-content .services-tabs-components .components-wrapper .component-text-areas .bottom-text {
+.services-inner-container .services-middle-content .tab-show .tab .tab-text .component-text-areas .bottom-text {
   margin-top: 10px;
   line-height: 1.65;
   font-size: 16px;
 }
-.services-inner-container .services-middle-content .services-tabs-components .component-image {
+.services-inner-container .services-middle-content .tab-show .tab-img {
   margin: 34px 0px 0px 36px;
+}
+.tab-open {
+  display: block;
 }
 .services-footer-section {
   background-color: #828282;

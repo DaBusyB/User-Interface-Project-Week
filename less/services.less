@@ -66,7 +66,6 @@ body {
 .services-container {
   margin: 0 auto;
   width: 1023px;
-  border: 1px solid orange;
 }
 
 //code starts here
@@ -106,14 +105,13 @@ body {
 }
 
 .services-inner-container {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .services-middle-content {
     width: 850px;
-    border: 1px solid green;
+
 
     .services-text {
       margin-top: 49px;
@@ -143,45 +141,53 @@ body {
         }
       }
     }//services-tabs
+    .tab-show {
+      display: none;
 
-    .services-tabs-components {
-      display: flex;
-      flex-direction: row;
-      margin-top: 53px;
+      .tab {
+        display: flex;
+        flex-direction: row;
+        margin-top: 53px;
 
-      .components-wrapper {
+        .tab-text {
 
-        h2 {
-          font-size: 21px;
-          font-weight: bold;
-          letter-spacing: 1.5px;
-        }
-
-        .component-text-areas {
-          width: 416px;
-
-          .top-text {
-            margin-top: 16px;
-            line-height: 1.65;
-            font-size: 16px;
+          h2 {
+            font-size: 21px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
           }
 
-          .bottom-text {
-            margin-top: 10px;
-            line-height: 1.65;
-            font-size: 16px;
-          }
-        }
-      }//components wrapper
+          .component-text-areas {
+            width: 416px;
 
-      .component-image {
+            .top-text {
+              margin-top: 16px;
+              line-height: 1.65;
+              font-size: 16px;
+            }
+
+            .bottom-text {
+              margin-top: 10px;
+              line-height: 1.65;
+              font-size: 16px;
+            }
+          }
+        }//components wrapper
+      }
+      .tab-img {
         margin: 34px 0px 0px 36px;
       }
+
+      
     }//services-tabs-components
 
   }//services-middle-content
 
 }//services-inner-container
+
+.tab-open {
+  display: block;
+}
 
 .services-footer-section {
   background-color: #828282;
