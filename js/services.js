@@ -45,7 +45,7 @@ const buttons = document.querySelectorAll("button");
         [...tabTitle].forEach((title) => {
             let targetTab = title.parentNode.parentNode.parentNode;
             title.textContent === button.textContent &&
-            targetTab.classList.toggle("tab-show")
+            targetTab.classList.toggle("tab-open")
         }); 
     });
 });
