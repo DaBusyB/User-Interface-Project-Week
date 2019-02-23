@@ -1,14 +1,39 @@
 
-class TabShow {
-    constructor(domElement) {
-        this.domElement = domElement;
+class ButtonLink {
+    constructor(buttonElement) {
+        this.buttonElement = buttonElement;
 
-        this.title = this.domElement.querySelector("h2").textContent;
+        this.tabData = this.buttonElement.dataset.button;
+
+        this.tab = document.querySelectorAll(`.tab[data-tab="${this.tabData}"]`);
+
+        this.tab = Array.from(this.tab).map((currTab) => new Tab(currTab));
+
+        this.buttonElement.addEventListener("click", this.selectButton.bind(this));
     }
 
-    showNewTab() {
-        this.domElement.classList.toggle(".tab-open");
+    selectButton() {
+        const button = document.querySelectorAll(".button")
+                               .forEach((eaButton) => eaButton.classList.remove((".active-button")));
+
+        const tabs = document.querySelectorAll(".tab")
+                             .forEach((eaTab) => eaTab.getElementsByClassName.display = "none")
+
+        this.buttonElement.classList.add(".active-button");
+
+        this.tab.forEach(tab => tab.selectTab());
     }
 }
 
-let tabs = document.querySelectorAll
+class Tab {
+    constructor(tabElement) {
+        this.tabElement = tabElement;
+    }
+
+    selectTab() {
+        this.tabElement.style.display = "flex";
+    }
+}
+
+let buttons = document.querySelectorAll(".button")
+                      .forEach((eaButton) => new ButtonLink(eaButton))
