@@ -108,86 +108,91 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  .services-middle-content {
-    width: 850px;
+.services-middle-content {
+  width: 850px;
 
 
-    .services-text {
-      margin-top: 49px;
-      line-height: 1.6;
+  .services-text {
+    margin-top: 49px;
+    line-height: 1.6;
+  }
+}
+
+.button-tabs {
+  display: flex;
+  
+  justify-content: space-between;
+  margin-top: 43px;
+
+  button {
+    width: 184px;
+    font-weight: bold;
+    font-size: 19px;
+    background-color: @white;
+    transition-duration: 0.4s;
+    height: 50px;
+
+    &:hover {
+      background-color: #222222;
+      color: #FFF;
     }
 
-    .services-tabs {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 43px;
-
-      button {
-        width: 184px;
-        font-weight: bold;
-        font-size: 19px;
-        background-color: @white;
-        transition-duration: 0.4s;
-        height: 50px;
-
-        &:hover {
-          background-color: #222222;
-          color: #FFF;
-        }
-
-        &:focus {
-          background-color: #5E9FB9;
-        }
-      }
-    }//services-tabs
-    .tab-show {
-      display: none;
-
-      .tab {
-        display: flex;
-        flex-direction: row;
-        margin-top: 53px;
-
-        .tab-text {
-
-          h2 {
-            font-size: 21px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-          }
-
-          .component-text-areas {
-            width: 416px;
-
-            .top-text {
-              margin-top: 16px;
-              line-height: 1.65;
-              font-size: 16px;
-            }
-
-            .bottom-text {
-              margin-top: 10px;
-              line-height: 1.65;
-              font-size: 16px;
-            }
-          }
-        }//components wrapper
-      }
-      .tab-img {
-        margin: 34px 0px 0px 36px;
-      }
-
-      
-    }//services-tabs-components
-
-  }//services-middle-content
-
-}//services-inner-container
-
-.tab-open {
-  display: block;
+    &:focus {
+      background-color: #5E9FB9;
+    }
+  }
 }
+
+.tab-show-hide {
+  display: none;
+
+  .tab {
+    display: flex;
+    margin-top: 53px;
+
+    .tab-text {
+
+      h2 {
+        font-size: 21px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+      }
+
+      .tab-text-areas {
+        width: 416px;
+
+        .top-text {
+          margin-top: 16px;
+          line-height: 1.65;
+          font-size: 16px;
+        }
+
+        .bottom-text {
+          margin-top: 10px;
+          line-height: 1.65;
+          font-size: 16px;
+        }
+      }
+    }//components wrapper
+
+    .tab-img {
+      margin: 34px 0px 0px 36px;
+    }
+  }
+  
+
+  
+}//services-tabs-components
+
+  
+
+
+
+// .tab-open {
+//   display: block;
+// }
 
 .services-footer-section {
   background-color: #828282;
