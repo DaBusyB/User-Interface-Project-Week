@@ -1,42 +1,74 @@
-
 class ButtonLink {
     constructor(buttonElement) {
         this.buttonElement = buttonElement;
 
         this.buttonData = this.buttonElement.dataset.button;
+        console.log(this.buttonData)
+        
 
-        this.buttonData === "defaultButton" ?
-        this.tabs = document.querySelector(".default") :
-        this.tabs = document.querySelector(`.tab-show-hide[data-tab="${this.buttonData}"]`);
-
-        //this.tabs = Array.from(this.tab).map((currTab) => new Tab(currTab));
 
         this.buttonElement.addEventListener("click", this.selectButton.bind(this));
     }
 
-    selectButton() {
-        const buttons = document.querySelectorAll(".button")
-                               .forEach((eaButton) => eaButton.classList.remove((".active-button")));
+    selectButton() { 
+        //let tabData = document.querySelector(".tab-show-hide")
+        //console.log(tabData)
 
-        const tabs = document.querySelectorAll(".tab-show-hide")
-                             .forEach((eaTab) => eaTab.style.display = "none")
+        let tabs = document.querySelectorAll(".tab-show-hide")
+                            .forEach((eaTab) => {
+                            eaTab.style.display = "none";
+                            eaTab.classList.remove("default");
+                            tabData.classList.add(".default");
+                            });
 
-        this.buttonElement.classList.add(".active-button");
-
-        //this.tabs.forEach(tab => tab.selectTab());
-        this.tabs.style.display = "flex";
     }
 }
 
-// class Tab {
-//     constructor(tabElement) {
-//         this.tabElement = tabElement;
-//     }
-
-//     selectTab() {
-//         this.tabElement.style.display = "flex";
-//     }
-// }
 
 let buttons = document.querySelectorAll(".button")
                       .forEach((eaButton) => new ButtonLink(eaButton))
+
+
+
+
+// class ButtonLink {
+//     constructor(buttonElement) {
+//         this.buttonElement = buttonElement;
+
+//         this.buttonData = this.buttonElement.dataset.button;
+
+//         this.buttonData === "defaultButton" ?
+//         this.tabs = document.querySelector(".default") :
+//         this.tabs = document.querySelector(`.tab-show-hide[data-tab="${this.buttonData}"]`);
+
+//         // this.tabs = new Tab();
+
+//         this.buttonElement.addEventListener("click", this.selectButton.bind(this));
+//     }
+
+//     selectButton() {
+//         const button = document.querySelectorAll(".button")
+//                                .forEach((eaButton) => eaButton.classList.remove((".active-button")));
+
+//         const tab = document.querySelectorAll(".tab-show-hide")
+//                              .forEach((eaTab) => eaTab.style.display = "none");
+                                 
+//         this.buttonElement.classList.add(".active-button");
+
+        
+       
+//     }
+// }
+
+// // class Tab {
+// //     constructor(tabElement) {
+// //         this.tabElement = tabElement;
+// //     }
+
+// //     selectTab() {
+// //         this.tabElement.style.display = "flex";
+// //     }
+// // }
+
+// let buttons = document.querySelectorAll(".button")
+//                       .forEach((eaButton) => new ButtonLink(eaButton))
