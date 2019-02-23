@@ -757,6 +757,7 @@ button {
 @media (max-width: 500px) {
   .footer-section {
     width: 450px;
+    height: 600px;
     margin: 0 auto;
   }
 }
@@ -766,6 +767,20 @@ button {
   align-items: center;
   height: 230px;
   margin: 0px 60px;
+}
+@media (max-width: 500px) {
+  .footer-section .footer {
+    flex-direction: column;
+    padding-top: 150px;
+    position: relative;
+    left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .footer-section .footer .contact {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
 }
 .footer-section .footer .contact-invite {
   font-size: 20px;
@@ -784,6 +799,12 @@ button {
 .footer-section .footer address {
   line-height: 1.6;
 }
+@media (max-width: 500px) {
+  .footer-section .footer address {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
 .footer-section .footer address h3 {
   font-size: 18px;
 }
@@ -796,4 +817,10 @@ button {
   display: flex;
   justify-content: center;
   font-size: 11px;
+}
+@media (max-width: 500px) {
+  .footer-section .copyright {
+    align-items: flex-end;
+    margin-top: 200px;
+  }
 }

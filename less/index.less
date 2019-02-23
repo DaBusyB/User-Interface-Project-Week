@@ -375,6 +375,7 @@ button {
 
   @media (max-width: 500px) {
     width: 450px;
+    height: 600px;
     // flex-direction: column;
     //align-items: center;
     margin: 0 auto;
@@ -387,6 +388,20 @@ button {
     height: 230px;
     margin: 0px 60px; 
 
+    @media (max-width: 500px) {
+      flex-direction: column;
+      padding-top: 150px;
+      position: relative;
+      left: 0;
+      //padding-bottom: 100px;
+    }
+
+    .contact {
+      @media (max-width: 500px) {
+        margin-top: 50px;
+        margin-bottom: 25px;
+      }
+    }
     .contact-invite {
       font-size: 20px;
       margin-bottom: 5px;
@@ -407,6 +422,10 @@ button {
     address {
       line-height: 1.6;
 
+      @media (max-width: 500px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
       h3 {
         font-size: 18px;
       }
@@ -423,5 +442,10 @@ button {
     display: flex;
     justify-content: center;
     font-size: 11px;
+    
+    @media(max-width: 500px) {
+      align-items: flex-end;
+      margin-top: 200px;
+    }
   }
 }
