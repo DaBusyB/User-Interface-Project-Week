@@ -523,25 +523,50 @@ button {
 .business-content .smith-jones-content {
   margin-top: 50px;
 }
+@media (max-width: 500px) {
+  .business-content .smith-jones-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .business-content .smith-jones-content h2 {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .business-content .smith-jones-content h2 {
+    order: 0;
+  }
+}
 .business-content .smith-jones-content p {
   line-height: 1.6;
   margin-bottom: 25px;
+}
+@media (max-width: 500px) {
+  .business-content .smith-jones-content p {
+    order: 1;
+  }
 }
 .business-content .smith-jones-content .sjones-button {
   margin-bottom: 135px;
 }
 @media (max-width: 500px) {
   .business-content .smith-jones-content .sjones-button {
-    width: 450x;
+    margin: 0 auto;
+    width: 400px;
+    order: 2;
   }
 }
 .business-content .futuristic-designs-content img {
   margin-bottom: 139px;
+}
+@media (max-width: 500px) {
+  .business-content .futuristic-designs-content img {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
 }
 .business-content .futuristic-designs-content h2 {
   font-weight: bold;
@@ -551,6 +576,13 @@ button {
 .business-content .futuristic-designs-content p {
   line-height: 1.6;
   margin-bottom: 25px;
+}
+@media (max-width: 500px) {
+  .business-content .futuristic-designs-content .futuristic-button {
+    margin: 0 auto;
+    width: 400px;
+    order: 2;
+  }
 }
 .business-content .futuristic-designs-content .project-text {
   line-height: 1.6;
@@ -681,8 +713,7 @@ button {
 @media (max-width: 500px) {
   .footer-section {
     width: 450px;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
     border: 1px solid orange;
   }
 }
