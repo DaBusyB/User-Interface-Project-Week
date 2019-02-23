@@ -456,7 +456,7 @@ body {
 }
 @media (max-width: 500px) {
   .container {
-    width: 500px;
+    width: 450px;
   }
 }
 button {
@@ -507,7 +507,19 @@ button {
     width: 450px;
     flex-direction: column;
     align-items: center;
-    border: 1px solid orange;
+  }
+}
+.business-content .mobileImg {
+  display: none;
+}
+@media (max-width: 500px) {
+  .business-content .mobileImg {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .business-content .desktopImg {
+    display: none;
   }
 }
 .business-content .smith-jones-container,
@@ -598,7 +610,6 @@ button {
     width: 450px;
     flex-direction: column;
     align-items: center;
-    border: 1px solid orange;
   }
 }
 .recent-projects h2 {
@@ -631,6 +642,11 @@ button {
   display: flex;
   letter-spacing: 8px;
 }
+@media (max-width: 500px) {
+  .recent-projects .villas .villas-box {
+    width: 400px;
+  }
+}
 .recent-projects .villas .villas-box .title-box {
   border: 1px solid #FFFFFF;
   position: relative;
@@ -643,6 +659,12 @@ button {
   display: flex;
   align-items: center;
   left: 63%;
+}
+@media (max-width: 500px) {
+  .recent-projects .villas .villas-box .title-box {
+    left: 0;
+    margin: 0 auto;
+  }
 }
 .recent-projects .villas .villas-box .title-box p {
   margin: 0 auto;
@@ -658,6 +680,11 @@ button {
   letter-spacing: 8px;
   margin-top: 80px;
 }
+@media (max-width: 500px) {
+  .recent-projects .outskirts .outskirts-box {
+    width: 400px;
+  }
+}
 .recent-projects .outskirts .outskirts-box .title-box {
   border: 1px solid #FFFFFF;
   position: relative;
@@ -669,6 +696,12 @@ button {
   height: 94px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .recent-projects .outskirts .outskirts-box .title-box {
+    left: 0;
+    margin: 0 auto;
+  }
 }
 .recent-projects .outskirts .outskirts-box .title-box p {
   margin: 0 auto;
@@ -684,6 +717,11 @@ button {
   letter-spacing: 8px;
   margin-top: 80px;
 }
+@media (max-width: 500px) {
+  .recent-projects .blocks .blocks-box {
+    width: 400px;
+  }
+}
 .recent-projects .blocks .blocks-box .title-box {
   border: 1px solid #FFFFFF;
   position: relative;
@@ -696,6 +734,12 @@ button {
   display: flex;
   align-items: center;
   left: 63%;
+}
+@media (max-width: 500px) {
+  .recent-projects .blocks .blocks-box .title-box {
+    left: 0;
+    margin: 0 auto;
+  }
 }
 .recent-projects .blocks .blocks-box .title-box p {
   margin: 0 auto;
@@ -714,7 +758,6 @@ button {
   .footer-section {
     width: 450px;
     margin: 0 auto;
-    border: 1px solid orange;
   }
 }
 .footer-section .footer {

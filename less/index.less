@@ -79,7 +79,12 @@ table{
   margin-bottom: 93px;
   display: flex;
   letter-spacing: 8px;
+
+  @media (max-width: 500px) {
+    width: 400px;
+  }
 }
+
 
 @project-title-box: {
   border: 1px solid @white;
@@ -92,6 +97,11 @@ table{
   height: 94px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 500px) {
+    left: 0;
+    margin: 0 auto;
+  }
 }
 
 //global styling
@@ -105,7 +115,7 @@ body {
 
   //small screen styling
   @media (max-width: 500px) {
-    width: 500px;
+    width: 450px;
   }
 
 }
@@ -117,6 +127,8 @@ button {
   width: 136px;
   text-align: center;
 }
+
+
 
 //target styling
 .menu-img {
@@ -164,7 +176,23 @@ button {
     width: 450px;
     flex-direction: column;
     align-items: center;
-    border: 1px solid orange;
+    
+  }
+
+  .mobileImg {
+    display: none;
+  
+    @media (max-width: 500px) {
+      display: block;
+    }
+  }
+  
+  .desktopImg {
+    // display: block;
+    
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
 
   .smith-jones-container, .futuristic-designs-container {
@@ -213,10 +241,14 @@ button {
         width: 400px;
         order: 2;
       }
-    }    
-  }
+    } 
+    
 
-  .futuristic-designs-content {
+  }
+    
+  
+
+  .futuristic-designs-content { 
     img {
       margin-bottom: 139px;
 
@@ -263,7 +295,6 @@ button {
     width: 450px;
     flex-direction: column;
     align-items: center;
-    border: 1px solid orange;
   }
   
   h2 {
@@ -330,6 +361,8 @@ button {
   }
 }
 
+
+
 .footer-section {
   background-color: #828282;
   height: 248px;
@@ -345,7 +378,6 @@ button {
     // flex-direction: column;
     //align-items: center;
     margin: 0 auto;
-    border: 1px solid orange;
   }
 
   .footer {
