@@ -102,6 +102,12 @@ body {
 .container {
   margin: 0 auto;
   width: 1023px;
+
+  //small screen styling
+  @media (max-width: 500px) {
+    width: 500px;
+  }
+
 }
 
 button {
@@ -154,6 +160,13 @@ button {
   width: 854px;
   margin: 0 auto;
 
+  @media (max-width: 500px) {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid orange;
+  }
+
   .smith-jones-container, .futuristic-designs-container {
     display: flex;
     flex-direction: column;
@@ -180,6 +193,10 @@ button {
 
     .sjones-button {
       margin-bottom: 135px;
+
+      @media (max-width: 500px) {
+        width: 450x;
+      }
     }    
   }
 
@@ -211,6 +228,13 @@ button {
   margin: 0 auto;
   margin-top: 95px;
   width: 854px;
+
+  @media (max-width: 500px) {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid orange;
+  }
   
   h2 {
     font-weight: bold;
@@ -285,6 +309,13 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (max-width: 500px) {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid orange;
+  }
 
   .footer {
     display: flex;

@@ -422,6 +422,11 @@ body {
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
+@media (max-width: 500px) {
+  .menu {
+    width: 500px;
+  }
+}
 .menu ul li {
   list-style-type: none;
   font-size: 48px;
@@ -448,6 +453,11 @@ body {
 .container {
   margin: 0 auto;
   width: 1023px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
 }
 button {
   border: 1px solid #222222;
@@ -492,6 +502,14 @@ button {
   width: 854px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .business-content {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid orange;
+  }
+}
 .business-content .smith-jones-container,
 .business-content .futuristic-designs-container {
   display: flex;
@@ -517,6 +535,11 @@ button {
 .business-content .smith-jones-content .sjones-button {
   margin-bottom: 135px;
 }
+@media (max-width: 500px) {
+  .business-content .smith-jones-content .sjones-button {
+    width: 450x;
+  }
+}
 .business-content .futuristic-designs-content img {
   margin-bottom: 139px;
 }
@@ -537,6 +560,14 @@ button {
   margin: 0 auto;
   margin-top: 95px;
   width: 854px;
+}
+@media (max-width: 500px) {
+  .recent-projects {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid orange;
+  }
 }
 .recent-projects h2 {
   font-weight: bold;
@@ -646,6 +677,14 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+@media (max-width: 500px) {
+  .footer-section {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid orange;
+  }
 }
 .footer-section .footer {
   display: flex;
