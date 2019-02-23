@@ -803,6 +803,7 @@ button {
   .footer-section .footer address {
     margin-top: 15px;
     margin-bottom: 15px;
+    width: 450px;
   }
 }
 .footer-section .footer address h3 {
