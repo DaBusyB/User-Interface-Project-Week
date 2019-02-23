@@ -3,25 +3,27 @@ class ButtonLink {
     constructor(buttonElement) {
         this.buttonElement = buttonElement;
 
-        this.tabData = this.buttonElement.dataset.button;
+        this.buttonData = this.buttonElement.dataset.button;
 
-        this.tab = document.querySelectorAll(`.tab[data-tab="${this.tabData}"]`);
+        this.buttonData === "defaultButton" ?
+        this.tabs = document.querySelector(".default") :
+        this.tabs = document.querySelector(`.tab-show-hide[data-tab="${this.buttonData}"]`);
 
-        this.tab = Array.from(this.tab).map((currTab) => new Tab(currTab));
+        this.tabs = Array.from(this.tab).map((currTab) => new Tab(currTab));
 
         this.buttonElement.addEventListener("click", this.selectButton.bind(this));
     }
 
     selectButton() {
-        const button = document.querySelectorAll(".button")
+        const buttons = document.querySelectorAll(".button")
                                .forEach((eaButton) => eaButton.classList.remove((".active-button")));
 
-        const tabs = document.querySelectorAll(".tab")
+        const tabs = document.querySelectorAll(".tab-show-hide")
                              .forEach((eaTab) => eaTab.getElementsByClassName.display = "none")
 
         this.buttonElement.classList.add(".active-button");
 
-        this.tab.forEach(tab => tab.selectTab());
+        this.tabs.forEach(tab => tab.selectTab());
     }
 }
 

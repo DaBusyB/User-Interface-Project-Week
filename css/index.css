@@ -337,32 +337,29 @@ body {
 .button-tabs button:focus {
   background-color: #5E9FB9;
 }
-.tab-show-hide {
-  display: none;
-}
-.tab-show-hide .tab {
+.tab {
   display: flex;
   margin-top: 53px;
 }
-.tab-show-hide .tab .tab-text h2 {
+.tab .tab-text h2 {
   font-size: 21px;
   font-weight: bold;
   letter-spacing: 1.5px;
 }
-.tab-show-hide .tab .tab-text .tab-text-areas {
+.tab .tab-text .tab-text-areas {
   width: 416px;
 }
-.tab-show-hide .tab .tab-text .tab-text-areas .top-text {
+.tab .tab-text .tab-text-areas .top-text {
   margin-top: 16px;
   line-height: 1.65;
   font-size: 16px;
 }
-.tab-show-hide .tab .tab-text .tab-text-areas .bottom-text {
+.tab .tab-text .tab-text-areas .bottom-text {
   margin-top: 10px;
   line-height: 1.65;
   font-size: 16px;
 }
-.tab-show-hide .tab .tab-img {
+.tab .tab-img {
   margin: 34px 0px 0px 36px;
 }
 .services-footer-section {
