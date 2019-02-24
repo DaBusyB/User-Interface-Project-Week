@@ -47,7 +47,19 @@
 // let buttons = document.querySelectorAll(".button")
 //                       .forEach((eaButton) => new ButtonLink(eaButton))
 
-  
 
+const button = document.querySelectorAll(".button")
+                        .forEach((eaButton) => {
+                           let buttonData = eaButton.dataset.button;
+                           let matchingTab = document.querySelector(`.tab-show-hide[data-button = '${buttonData}' ]`);
 
+                           
 
+                           eaButton.addEventListener("click", (event) => {
+                              const showHideTabs = document.querySelectorAll(".tab-show-hide")
+                                                   .forEach((eaTab) => eaTab.style.display = "none");
+
+                              matchingTab.style.display = "block";
+                           //   console.log(eaTab)
+                           });
+                     });
